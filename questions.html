@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Find My Match — DMV Scholars</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="questions.css">
+<body>
+
+
+ <nav>
+   <div class="nav-container">
+   
+     <div class="nav-logo">
+   <a href="homepage.html" style="background:none;">
+       <svg width="280" height="95" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+          
+           <g class="graduation-cap">
+               <polygon points="40,30 100,20 100,40 40,50" fill="#1e3a5f" stroke="#d4af37" stroke-width="2"/>
+               <ellipse cx="70" cy="25" rx="35" ry="8" fill="#1e3a5f" stroke="#d4af37" stroke-width="2"/>
+               <line x1="105" y1="25" x2="115" y2="15" stroke="#d4af37" stroke-width="3"/>
+               <circle cx="115" cy="13" r="3" fill="#d4af37"/>
+               <rect x="75" y="40" width="15" height="3" fill="#f4f4f4" rx="1"/>
+               <circle cx="92" cy="41.5" r="1" fill="#d4af37"/>
+           </g>
+          
+           <text x="130" y="35" font-family="Playfair Display, serif" font-size="24" font-weight="600" fill="#1e3a5f">DMV</text>
+           <text x="130" y="60" font-family="Playfair Display, serif" font-size="24" font-weight="600" fill="#1e3a5f">SCHOLARS</text>
+          
+           <line x1="130" y1="65" x2="260" y2="65" stroke="#d4af37" stroke-width="2"/>
+       </svg>
+   </a>
+</div>
+   
+     <ul>
+       <li><a href="homepage.html">Home</a></li>
+       <li><a href="questions.html">Questions</a></li>
+       <li><a href="scholarships.html">Scholarships</a></li>
+     </ul>
+   </div>
+ </nav>
+
+ <header>
+   <h1>Find My Match — DMV Scholarships</h1>
+   <div class="note"><strong>Open to Juniors &amp; Seniors (in high school)</strong></div>
+ </header>
+
+ <form id="quiz-form">
+   <label for="name">Name</label>
+   <input id="name" name="name" type="text" placeholder="Your full name">
+
+   <label for="gpa">1) Current GPA</label>
+   <select id="gpa" name="gpa">
+     <option value="">-- choose GPA range --</option>
+     <option value="3.8">3.8 - 4.0</option>
+     <option value="3.5">3.5 - 3.79</option>
+     <option value="3.0">3.0 - 3.49</option>
+     <option value="2.5">2.5 - 2.99</option>
+     <option value="below">Below 2.5</option>
+   </select>
+
+   <label for="grade">2) Grade level</label>
+   <select id="grade" name="grade">
+     <option value="">-- select grade --</option>
+     <option value="hs_junior">High school junior</option>
+     <option value="hs_senior">High school senior</option>
+     <option value="other">Other</option>
+   </select>
+
+   <label for="residency">3) Residency (DMV region)</label>
+   <select id="residency" name="residency">
+     <option value="">-- choose residency --</option>
+     <option value="DC">Washington, D.C.</option>
+     <option value="Maryland">Maryland</option>
+     <option value="Virginia">Virginia</option>
+     <option value="Baltimore">Baltimore (MD)</option>
+   </select>
+
+   <label>4) Field of interest (pick any)</label>
+   <div class="multi">
+     <label><input type="checkbox" name="major" value="STEM"> STEM</label>
+     <label><input type="checkbox" name="major" value="Arts"> Arts</label>
+     <label><input type="checkbox" name="major" value="Business"> Business</label>
+     <label><input type="checkbox" name="major" value="Health"> Health</label>
+     <label><input type="checkbox" name="major" value="Other"> Other</label>
+   </div>
+
+   <label>5) Extracurriculars (pick any)</label>
+   <div class="multi">
+     <label><input type="checkbox" name="activity" value="Volunteer"> Volunteer</label>
+     <label><input type="checkbox" name="activity" value="Leadership"> Leadership</label>
+     <label><input type="checkbox" name="activity" value="Arts"> Arts</label>
+     <label><input type="checkbox" name="activity" value="BSU"> BSU</label>
+     <label><input type="checkbox" name="activity" value="Key Club"> Key Club</label>
+   </div>
+
+   <label for="volhours">6) Volunteer hours / month</label>
+   <select id="volhours" name="volhours">
+     <option value="">-- choose --</option>
+     <option value="0">0</option>
+     <option value="1-4">1 - 4</option>
+     <option value="5-8">5 - 8</option>
+     <option value="9-15">9 - 15</option>
+     <option value="16+">16+</option>
+   </select>
+
+   <label>7) Awards / recognitions</label>
+   <div class="multi">
+     <label><input type="radio" name="awards" value="yes"> Yes</label>
+     <label><input type="radio" name="awards" value="no"> No</label>
+   </div>
+
+   <label for="income">8) Household income bracket</label>
+   <select id="income" name="income">
+     <option value="">-- choose income --</option>
+     <option value="low">&lt; $40,000</option>
+     <option value="medium">$40,000 - $100,000</option>
+     <option value="high">&gt; $100,000</option>
+   </select>
+
+
+
+   <label>9) Held leadership positions?</label>
+   <div class="multi">
+     <label><input type="radio" name="lead" value="yes"> Yes</label>
+     <label><input type="radio" name="lead" value="no"> No</label>
+   </div>
+
+
+
+   <label>10) What kind of scholarship are you looking for?</label>
+   <div class="multi">
+     <label><input type="checkbox" name="why" value="need"> Financial need</label>
+     <label><input type="checkbox" name="why" value="merit"> Academic merit</label>
+     <label><input type="checkbox" name="why" value="service"> Service</label>
+     <label><input type="checkbox" name="why" value="diversity"> Promote diversity</label>
+   </div>
+
+   <div class="button-group">
+     <button type="submit" class="submit-btn">Submit</button>
+     <button type="reset" class="clear-btn">Clear All</button>
+   </div>
+ </form>
+
+
+ <div id="result"></div>
+
+
+ <script src="questions.js"></script>
+
+</body>
+</html>
 
