@@ -1,1 +1,496 @@
+body {
+font-family: 'Times New Roman', Times, serif;
+background-color: #f2f8fa;
+color: #333;
+margin: 0;
+padding: 0;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+ background: linear-gradient(90deg, #05e1f5, rgb(3, 133, 153));
+ padding: 1px 5px;     /* smaller nav padding */
+ width: 100%;
+ box-sizing: border-box;
+}
+
+
+
+
+.nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+
+
+
+.nav-logo {
+ display: flex;
+ align-items: center;
+}
+
+
+
+
+nav ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ font-family: 'Times New Roman', serif;
+ display: flex;
+ align-items: center;
+}
+
+
+
+
+nav li {
+ display: inline;
+ margin: 0 15px;
+}
+
+
+
+
+nav a {
+ text-decoration: solid;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;        /* slightly smaller to fit */
+}
+
+
+
+
+nav ul li a {
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 25px;
+ padding: 2px 6px;
+ background-color: transparent;
+ border-radius: 5px;
+ transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+
+
+
+nav ul li a:hover {
+ background-color: #fd0094;
+ color: white;
+ transform: scale(1.1);
+ box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+
+
+.btn {
+font-family:'Times New Roman', Times, serif;
+font-size: 25px;
+padding: 8px 25px;
+background-color: #0dd8eb;
+color: white;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 100px;
+transition: transform 0.2s, background-color 0.2s;
+}
+.btn:hover {
+transform: scale(1.05);       /* slightly enlarge on hover */
+background-color: #ff04b0;    /* optional color change */
+color: white;
+}
+
+
+
+
+
+
+
+
+/* Header */
+header {
+text-align: center;
+background-color: #e8f6f8;
+padding: 25px;
+border-radius: 0;
+margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+header h1 {
+color: #037a8f;
+margin-bottom: 8px;
+font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header .lead {
+color: #555;
+font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header .note {
+color: #0b8c9d;
+font-weight: bold;
+margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form takes up most of page width */
+form {
+background-color: #fff;
+width: 85%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label {
+display: block;
+margin-top: 18px;
+font-weight: bold;
+color: #037a8f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="text"],
+select {
+width: 100%;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:focus,
+select:focus {
+border-color: #0bd1e3;
+outline: none;
+box-shadow: 0 0 4px rgba(11, 209, 227, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Checkboxes and radios */
+.multi {
+margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.multi label {
+display: inline-block;
+margin-right: 20px;
+font-weight: normal;
+color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.muted {
+color: #777;
+font-size: 0.9rem;
+margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+button {
+margin-top: 25px;
+background-color: #0bd1e3;
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1rem;
+font-weight: bold;
+transition: background-color 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button:hover {
+background-color: #fd0094;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Results note */
+#results-note {
+margin-top: 20px;
+color: #555;
+font-size: 0.95rem;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Make layout mobile-friendly */
+@media (max-width: 768px) {
+form {
+  width: 95%;
+  padding: 20px;
+}
+}
+.submit-btn,
+.clear-btn {
+background: linear-gradient(90deg, #05e1f5, rgb(3, 133, 153)); /* same gradient as nav bar */
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1rem;
+font-weight: bold;
+transition: all 0.3s ease;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.submit-btn:hover,
+.clear-btn:hover {
+background: #fd0094; /* hover matches nav bar link hover */
+transform: scale(1.05);
+box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.button-group {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 25px;
+
+#result {
+ margin-top: 20px;
+ max-height: 400px;
+ overflow-y: auto;
+ background: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#result ul { padding-left: 20px; }
+#result li { margin-bottom: 10px; }
+#result a { color: #037a8f; text-decoration: none; }
+#result a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+ form {
+   width: 95%;
+   padding: 20px;
+ }
+}
+}
