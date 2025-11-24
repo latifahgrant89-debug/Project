@@ -46,8 +46,8 @@ Limitations: lack the user interactive such as better advancement of technology,
 
 g. Source
 Provide your GitHub repository link (must be public).
- GitHub Repo Link: https://github.com/latifahgrant89-debug/Project/commits?author=latifahgrant89-debug 
-
+ GitHub Repo Link: [https://github.com/latifahgrant89-debug/Project](https://github.com/latifahgrant89-debug/Project 
+)     
 2. Individual Contributions
 Member 1: Naviah Owens
 a. Contributions
