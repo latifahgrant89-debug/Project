@@ -1,124 +1,154 @@
 body, html {
-  margin: 0;
-  padding: 0;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
 }
+
 
 .hero {
-  background-image: url('https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1664305760/carrollk12org/n3zknan5cpbtcatpeucq/cap_20277c.png');
-  background-size: contain;
-  background-position: right center;
-  background-repeat: no-repeat;
-  height: 92vh;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;        
-  position: relative;
-  padding-left: 50px;       
+ background-image: url('https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1664305760/carrollk12org/n3zknan5cpbtcatpeucq/cap_20277c.png');
+ background-size: contain;
+ background-position: right center;
+ background-repeat: no-repeat;
+ height: 88vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;  
+ padding: 120px 20px 20px 50px;      
+ position: relative;
+ box-sizing: border-box;
 }
+
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+ content: "";
+ position: absolute;
+ top: 0; left: 0; right: 0; bottom: 0;
+ background: rgba(0, 0, 0, 0.4);
+ z-index: 0;
 }
+
 
 .hero-text {
-  text-align: left;
-  color: white;
-  max-width: 700px;
-  z-index: 1;
+ text-align: center;
+ color: white;
+ max-width: 750px;     
+ width: 100%;
+ z-index: 1;
+ flex-shrink: 1;
+ margin-bottom: 60px;
 }
+
+
+.logo-container {
+ margin-bottom: 20px;
+ max-width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.logo-container svg {
+ width: 400px;          
+ height: auto;
+}
+
 
 .hero-text h1 {
-  text-align:left;
-  font-size: 3rem;
-  margin-bottom: 20px;
+ text-align: center;
+ font-size: 35px;
+ margin-top: 100px;        
 }
+
 
 .hero-text p {
-  text-align:left;
-  font-size: 1.2rem;
-  line-height: 1.5;
+ text-align: center;
+ font-size: 23px;       
+ line-height: 1.4;
 }
 
-body{
-    background-color: aliceblue;
+.btn {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 24px;         
+ padding: 18px 55px;
+ background-color: #0dd8eb;
+ color: white;
+ font-weight: bold;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 100px;
+ transition: transform 0.2s, background-color 0.2s;
 }
 
-h1 {
-  text-align: center;
-  font-family: cursive;
+.btn:hover {
+ transform: scale(1.05);
+ background-color: #ff04b0;
+ color: white;
 }
+
+
 nav {
-background: linear-gradient(90deg, #05e1f5, rgb(3, 133, 153)); /* purple → blue when hovered */    
-  text-align: center;         
- display: flex;
-  justify-content: space-around; 
-  align-items: center;
-  padding: 15px 0; 
-  width: 100%;
+ background: linear-gradient(90deg, #05e1f5, rgb(3, 133, 153));
+ padding: 1px 5px;    
+ width: 100%;
+ box-sizing: border-box;
 }
+
+.nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+
+.nav-logo {
+ display: flex;
+ align-items: center;
+}
+
 
 nav ul {
-  list-style-type: none;      
-  margin: 0;
-  padding: 0;
-  font-family: cursive;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ font-family: 'Times New Roman', serif;
+ display: flex;
+ align-items: center;
 }
+
 
 nav li {
-  display: inline;             
-  margin: 0 20px;             
+ display: inline;
+ margin: 0 15px;
 }
+
 
 nav a {
-  text-decoration:solid;      
-  color:white;               
-  font-weight: bold;
-  font-size: 25px;
- 
+ text-decoration: solid;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;        
 }
 
+
 nav ul li a {
-  color: white;           
-  text-decoration: none;   
-  font-weight: bold;
-  font-size: 25px;
-  padding: 5px 10px;      
-  background-color: transparent;  
-  border-radius: 5px;            
-  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s, color 0.2s;
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 25px;
+ padding: 2px 6px;
+ background-color: transparent;
+ border-radius: 5px;
+ transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s, color 0.2s;
 }
 
 
 nav ul li a:hover {
-  background-color: #fd0094;            
-  color: white;                         
-  transform: scale(1.1);                
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+ background-color: #fd0094;
+ color: white;
+ transform: scale(1.1);
+ box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-
-.btn {
-  font-family:cursive;
-  font-size: 25px;
-  padding: 8px 25px;
-  background-color: #0dd8eb;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.btn:hover {
-  transform: scale(1.05);       
-  background-color: #ff04b0;
-  color: white;
-}
-
-
-  
